@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmForge - Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <h1 class="text-2xl font-bold text-indigo-600">FilmForge</h1>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="index.html#home" class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Home</a>
+                        <a href="index.html#films" class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Films</a>
+                        <a href="index.html#schedule" class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Screenings</a>
+                        <a href="index.html#filmmakers" class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Filmmakers</a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <button onclick="window.location.href='register.html'" class="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700 mr-4">Sign Up</button>
+                    <button onclick="window.location.href='index.html#profile'" class="text-gray-500 hover:text-gray-900 px-4 py-2 rounded-md text-sm font-medium">Profile</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Form -->
+    <section class="min-h-screen flex items-center justify-center py-12">
+        <div class="max-w-md w-full mx-auto bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-6">Sign In</h2>
+            <form id="login-form" action="login.php" method="POST" class="space-y-6">
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter your email">
+                </div>
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input type="password" id="password" name="password" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter your password">
+                </div>
+                <div>
+                    <button type="submit" class="w-full bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700">Sign In</button>
+                </div>
+            </form>
+            <p class="mt-4 text-center text-sm text-gray-600">
+                Don't have an account? <a href="register.html" class="text-indigo-600 hover:text-indigo-800">Sign Up</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold">FilmForge</h3>
+                    <p class="mt-4 text-gray-400">Empowering independent filmmakers to share their stories with the world.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold">Quick Links</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="index.html#films" class="text-gray-400 hover:text-white">Films</a></li>
+                        <li><a href="index.html#schedule" class="text-gray-400 hover:text-white">Screenings</a></li>
+                        <li><a href="index.html#filmmakers" class="text-gray-400 hover:text-white">Filmmakers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold">Contact</h3>
+                    <p class="mt-4 text-gray-400">Email: support@filmforge.com</p>
+                    <p class="mt-2 text-gray-400">Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-400">© 2025 FilmForge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
